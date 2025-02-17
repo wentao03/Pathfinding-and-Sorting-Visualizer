@@ -1,0 +1,100 @@
+.node {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    display: inline-block;
+    outline: 1px solid #d3d3d3;
+}
+
+.start-node {
+    background-color: #a7c7e7;
+}
+
+.target-node {
+    background-color: #8b0000;
+}
+
+.wall-node {
+    background-color: #3b270c;
+}
+
+.weight-node {
+    background-color: #b19cd9;
+}
+
+.weight-node-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 15px;
+    height: 15px;
+    pointer-events: none;
+    user-select: none;
+}
+
+.visited-node {
+    animation-name: visitedNodeAnimation;
+    animation-duration: 1.5s;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes visitedNodeAnimation {
+    0% {
+        background-color: #fed0b1;
+        transform: scale(0.25);
+        border-radius: 100%;
+    }
+
+    50% {
+        background-color: #ffbd90;
+    }
+
+    75% {
+        background-color: #ffa468;
+        transform: scale(1.15);
+
+    }
+
+    100% {
+        background-color: #ff9147;
+        transform: scale(1);
+
+    }
+}
+
+.shortest-path-node {
+    animation-name: foundPathNodeAnimation;
+    animation-duration: 1.5s;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes foundPathNodeAnimation {
+    0% {
+        background-color: #99e695;
+        transform: scale(0.25);
+        border-radius: 100%;
+    }
+    
+    50% {
+        background-color: #91dc8d;
+    }
+
+    75% {
+        background-color: #85ca81;
+        transform: scale(1.15);
+    }
+    
+    100% {
+        background-color: #6eaa6b;
+        transform: scale(1);
+    }
+}

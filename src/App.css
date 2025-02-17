@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.title {
+  padding: 0px 10px;
+}
+
+body {
+  background-color: #f7f4ef;
+  font-family: 'Poppins';
+  color: #332211;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #1a41ac;
   color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #13348f;
+  transform: scale(1.05);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:active {
+  background-color: #0c225d;
+  transform: scale(1);
+}
+
+button:disabled {
+  background-color: #2f4f5c;
+  color: lightgray;
+  cursor: not-allowed;
+  transform: none;
+}
+
+button:disabled:hover {
+  background-color: #3c5e6e;
+  transform: none;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reset {
+  background-color: #660d19;
+}
+
+.reset:hover {
+  background-color: #540c15;
+}
+
+.reset:active {
+  background-color: #38080e;
+}
+
+.reset:disabled {
+  background-color: #71343c;
+}
+
+.reset:disabled:hover {
+  background-color: #72454b;
+  transform: none;
+}
+
+.special-button {
+  background-color: #7461ab;
+}
+
+.special-button:hover {
+  background-color: #544582;
+}
+
+.special-button:active {
+  background-color: #383366;
+}
+
+.special-button:disabled {
+  background-color: #7c729c;
+}
+
+.special-button:disabled:hover {
+  background-color: #867f9e;
+}
+
+#switch-visualizer {
+  background-color: #3d2814;
+}
+
+#switch-visualizer:hover {
+  background-color: #332211;
+}
+
+#switch-visualizer:active {
+  background-color: #1e140a
+}
+
+.info {
+  text-align: center;
 }
