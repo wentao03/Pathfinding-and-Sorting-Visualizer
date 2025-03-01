@@ -231,9 +231,9 @@ export default class SortingVisualizer extends React.Component {
                     <div class="dropdown">
                         <button class="dropbtn" className='special-button' disabled={isSorting}>Change Amount of Bars</button>
                         <div class="dropdown-content">
-                            <a href="#" onClick={() => this.reset(50)}>50</a>
-                            <a href="#" onClick={() => this.reset(100)}>100</a>
-                            <a href="#" onClick={() => this.reset(150)}>150</a>
+                            <button onClick={() => this.reset(50)}>50</button>
+                            <button onClick={() => this.reset(100)}>100</button>
+                            <button onClick={() => this.reset(150)}>150</button>
                         </div>
                     </div>
                 </div>
