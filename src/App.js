@@ -14,7 +14,8 @@ function App() {
     <>
     <Router>
       <Routes>
-        <Route exact path="/" element={<PathfindingVisualizer/>}/>
+        <Route path="/" element={<Navigate to="/pathfinding" replace />}/>
+        <Route path="/pathfinding" element={<PathfindingVisualizer/>}/>
         <Route path="/sorting" element={<SortingVisualizer/>}/>
 
       </Routes>

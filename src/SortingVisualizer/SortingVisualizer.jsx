@@ -1,5 +1,5 @@
 import React from 'react';
-import * as sortingAlgorithms from '../algorithms/sortingAlgorithms.js';
+import * as sortingAlgorithms from '../Algorithms/sortingAlgorithms.js';
 import './SortingVisualizer.css';
 import { Link } from "react-router-dom";
 
@@ -218,7 +218,7 @@ export default class SortingVisualizer extends React.Component {
             <>
                 <div className="header">
                     <h1 className="title">Sorting Visualizer</h1>
-                    <Link to="/">
+                    <Link to="/pathfinding">
                         <button id="switch-visualizer">Switch to Pathfinding Visualizer</button>
                     </Link>
                 </div>

@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { aStar } from '../algorithms/aStar';
-import { dijkstra } from '../algorithms/dijkstra';
-import { dfs } from '../algorithms/dfs';
-import { bfs } from '../algorithms/bfs';
+import { aStar } from '../Algorithms/a-star';
+import { dijkstra } from '../Algorithms/dijkstra';
+import { dfs } from '../Algorithms/dfs';
+import { bfs } from '../Algorithms/bfs';
 import Node from "./Node/Node";
 import './PathfindingVisualizer.css';
 
