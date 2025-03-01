@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Pathfinding-and-Sorting-Visualizer/static/css/main.6d034137.css",
+    "main.js": "/Pathfinding-and-Sorting-Visualizer/static/js/main.2bb970a9.js",
+    "static/media/weightImage.png": "/Pathfinding-and-Sorting-Visualizer/static/media/weightImage.8597041896f41b971014.png",
+    "index.html": "/Pathfinding-and-Sorting-Visualizer/index.html",
+    "main.6d034137.css.map": "/Pathfinding-and-Sorting-Visualizer/static/css/main.6d034137.css.map",
+    "main.2bb970a9.js.map": "/Pathfinding-and-Sorting-Visualizer/static/js/main.2bb970a9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6d034137.css",
+    "static/js/main.2bb970a9.js"
+  ]
+}
