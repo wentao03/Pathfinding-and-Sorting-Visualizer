@@ -231,9 +231,9 @@ export default class SortingVisualizer extends React.Component {
                     <div class="dropdown">
                         <button class="dropbtn" className='special-button' disabled={isSorting}>Change Amount of Bars</button>
                         <div class="dropdown-content">
-                            <a onClick={() => this.reset(50)}>50</a>
-                            <a onClick={() => this.reset(100)}>100</a>
-                            <a onClick={() => this.reset(150)}>150</a>
+                            <a href="#" onClick={() => this.reset(50)}>50</a>
+                            <a href="#" onClick={() => this.reset(100)}>100</a>
+                            <a href="#" onClick={() => this.reset(150)}>150</a>
                         </div>
                     </div>
                 </div>
@@ -241,7 +241,7 @@ export default class SortingVisualizer extends React.Component {
                     {isEnd === true &&
                         <p>{algorithmInfo[currentAlgorithm].name} has a time complexity of {algorithmInfo[currentAlgorithm].timeComplexity} and space complexity of {algorithmInfo[currentAlgorithm].spaceComplexity}.</p>
                     }
-                    {isEnd == false &&
+                    {isEnd === false &&
                         <p>Note: Bubble Sort amination is sped up 8 times due to the slow nature of the algorithm.</p>
                     }
 
