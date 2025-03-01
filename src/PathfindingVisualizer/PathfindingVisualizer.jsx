@@ -244,7 +244,7 @@ export default class PathfindingVisualizer extends Component {
                 <div className="info">
                     {isEnd === true &&
                         <div>
-                            <p>{algorithmInfo[currentAlgorithm].name} has a time complexity of {algorithmInfo[currentAlgorithm].timeComplexity} and space complexity of {algorithmInfo[currentAlgorithm].spaceComplexity}</p>
+                            <p>{algorithmInfo[currentAlgorithm].name} has a time complexity of {algorithmInfo[currentAlgorithm].timeComplexity} and space complexity of {algorithmInfo[currentAlgorithm].spaceComplexity}.</p>
                             {pathFoundDistance !== null && (
                                 <p>
                                     {pathFoundDistance === -1
